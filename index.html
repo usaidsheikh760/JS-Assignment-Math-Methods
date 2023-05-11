@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Q1;
+
+        let user = prompt("Enter any integer value");
+        let roundOff = Math.round(user);
+        let floorValue = Math.floor(user);
+        let ceilValue = Math.ceil(user);
+
+        document.write("<h3>Q1</h3>");
+        document.write("<h4>Number:</h4>"  + user);
+        document.write("<h4>Round Off:</h4>"  + roundOff);
+        document.write("<h4>Floor Value:</h4>" + floorValue);
+        document.write("<h4>Ceil Value:</h4>" + ceilValue);
+    
+        
+        //end;
+        
+        //Q2;
+        
+        
+        let user1 = parseFloat(("Enter any negative floating point value"));
+        let roundOff1 = Math.round(user1);
+        let floorValue1 = Math.floor(user1);
+        let ceilValue1 = Math.ceil(user1);
+
+        document.write("<h3>Q2</h3>");
+        document.write("<h4>Number:</h4>"  + user1);
+        document.write("<h4>Round Off:</h4>"  + roundOff1);
+        document.write("<h4>Floor Value:</h4>" + floorValue1);
+        document.write("<h4>Ceil Value:</h4>" + ceilValue1);
+        
+        //end;
+
+        //Q3;
+
+        let user2 = parseInt(prompt("Enter any number"));
+        let absNum = Math.abs(user2);
+        
+        document.write("<h3>Q3</h3>");
+        document.write("<h4>The absolute value of: </h4>"  + user2 + " is " + absNum);
+        
+        //end;
+
+        //Q4;
+
+        let random = Math.floor(Math.random() * 6 + 1);
+        document.write("<h3>Q4</h3>");
+        document.write("<h4>Random dice value is: </h4>" + random);
+        
+       //end;
+       
+       //Q5;
+       
+       let random1 = Math.floor(Math.random()*2 + 1);
+       let toss;
+       if(random1 === 1){
+           toss = "Tails";
+        }
+        else{
+            toss = "Heads";
+        }
+        
+        document.write("<h3>Q5</h3>");
+        document.write("<h4>The result of coin toss is: </h4>" + toss);
+        
+       //end;
+       
+       //Q6;
+       
+       let random2 = Math.floor(Math.random()*100 + 1);
+       
+       document.write("<h3>Q6</h3>");
+       document.write("<h4>Random number between 1 & 100 is: </h4>" + random2);
+       
+      //end;
+      
+      //Q7;
+      
+      let user3 = prompt("Enter your weight in kilograms");
+      user3 = user3.replace("kgs", "").replace("kilograms", "");
+      user3 = parseFloat(user3);
+      
+      document.write("<h3>Q7</h3>");
+      document.write("Your weight is " + user3 + " KG.");
+        
+      //end;
+
+      //Q8;
+
+      let secretNum = +prompt("Guess your number");
+      let random3 = Math.floor(Math.random()*10 + 1);
+
+      if (secretNum === random3){
+        alert ("Congratulations! You guess the right number");
+      }
+      else {
+        alert ("OOPS! You guess the wrong number." + " The right number is " + random3);
+      }
+
+      //end;
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
